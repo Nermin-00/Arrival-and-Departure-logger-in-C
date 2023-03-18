@@ -3,18 +3,25 @@
 
 int main()
 {
+
     time_t hour;
     time(&hour);
 
    printf("\n The time is: %s", ctime(&hour));
 
     char arivee[10];
-    printf("Who arrived?\n");
+    printf("Enter who arrived?\n");
         gets(arivee);
 
 
-    printf("Arivee and  time of arrival: %s %s", arivee, ctime(&hour));
+    printf("\nArivee and  time of arrival: %s \n \n%s ",  arivee, ctime(&hour));
 
+ FILE *fp;
+
+        fp = fopen("logs/test.txt", "w+");
+        fprintf(fp, "Test...");
+        fputs("testing for fputs....", fp);
+        fclose(fp);
    return 0;
 }
 
