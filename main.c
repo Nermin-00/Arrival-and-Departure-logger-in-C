@@ -19,8 +19,8 @@ int main()
  FILE *fp;
 
         fp = fopen("logs/test.txt", "w+");
-        fprintf(fp, "Test...");
-        fputs("testing for fputs....", fp);
+        fprintf(fp, arivee);
+        fputs(ctime(&hour), fp);
         fclose(fp);
    return 0;
 }
