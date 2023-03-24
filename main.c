@@ -14,6 +14,22 @@ int main()
         gets(arivee);
 
 
+    char answer;
+        printf("Anyone else? Y/N\n");
+        scanf(" %c", &answer);
+        printf("\n answer is %c\n", answer);
+    while (answer == 'Y'){
+
+printf("Success!");
+
+printf("\nDo you want to play again? Y or N: \n");
+
+scanf(" %c", &answer);
+printf("\n answer is %c\n", answer);
+
+}
+
+
     printf("\nArivee and  time of arrival: %s \n \n%s ",  arivee, ctime(&hour));
 
  FILE *fp;
